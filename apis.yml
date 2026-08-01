@@ -1,7 +1,29 @@
 aid: sira-medical
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sira-medical.png
 name: Sira Medical
-description: Sira Medical is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Sira Medical develops augmented reality software that transforms 3D radiological
+  imaging into patient-specific holographic models projected onto real-world backgrounds.
+  Delivered through head-mounted AR devices (such as Microsoft HoloLens) and mobile
+  platforms, the technology helps surgeons perform preoperative planning with greater
+  confidence, clinicians educate patients with understandable visualizations, medical
+  schools train students on patient-specific anatomy, and medical-device makers design
+  and validate implants. The company is backed by 500 Global, Eileses Capital, UCSF
+  Innovation Ventures, and Microsoft for Startups. Sira Medical operates as a clinical
+  AR software vendor and does not currently expose a public developer API, SDK, or
+  developer portal; this profile captures its public identity, legal, and domain-security
+  posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/sira-medical/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Medical Imaging
+- Augmented Reality
+- Surgical Planning
+- Radiology
+- Medical Devices
+- Visualization
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sira-medical-domain-security.yml
 - type: Website
   url: https://siramedical.com
+- type: About
+  url: https://siramedical.com/about/
+- type: Blog
+  url: https://siramedical.com/news/
+- type: Support
+  url: https://siramedical.com/get-in-touch/
+- type: Login
+  url: https://siramedical.com/login
+- type: TermsOfService
+  url: https://siramedical.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://siramedical.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
